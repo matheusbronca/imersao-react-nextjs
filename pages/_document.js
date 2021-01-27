@@ -53,7 +53,7 @@ e se divirta."
             content="Teste seus conhecimentos sobre a franquia The Witcher
 e se divirta."
           />
-          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta property="og:image" content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg" />
 
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
@@ -67,7 +67,7 @@ e se divirta."
             content="Teste seus conhecimentos sobre a franquia The Witcher
 e se divirta."
           />
-          <meta property="twitter:image" content="/images/og-image.jpg"></meta>
+          <meta property="twitter:image" content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg"></meta>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
