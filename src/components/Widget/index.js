@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Widget = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: rgba(0,0,0, .35);
+  background-color: rgba(0,0,0, .75);
   width: 100%;
   max-width: 550px;
   padding: 1.75rem 2.5rem 1.5rem 2.5rem;

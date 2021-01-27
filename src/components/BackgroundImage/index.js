@@ -7,8 +7,6 @@ const BackgroundImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
   position: relative;
 `;
 

@@ -3,15 +3,17 @@ import Image from 'next/image';
 
 const FooterWrapper = styled.footer`
   display: flex;
-  position: absolute;
   width: 100%;
   max-width: 550px;
   margin: auto;
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  bottom: 0%;
-  margin-bottom: 1.5rem;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const Logo = (props) => <Image {...props} />;

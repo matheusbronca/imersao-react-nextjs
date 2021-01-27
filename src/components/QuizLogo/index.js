@@ -18,6 +18,11 @@ const LogoWrapper = styled.div`
   margin-bottom: -11rem;
   z-index: 2;
   pointer-events: none;
+
+  @media screen and (max-width: 500px) {
+    margin-top: -6rem;
+    margin-bottom: -8rem;
+  }
 `;
 const Logo = (props) => {
   return (
