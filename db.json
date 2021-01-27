@@ -1,0 +1,43 @@
+{
+  "title": "Quiz",
+  "description": "Teste seus conhecimentos sobre a franquia The Witcher e se divirta!",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Como fazer um seletor por id via CSS?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        ".elemento",
+        "*elemento",
+        "#elemento",
+        "%elemento"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Como fazer um background gradiente com css?",
+      "description": "Faz tempo em haha",
+      "answer": 0,
+      "alternatives": [
+         "background: linear-gradient(#e66465, #9198e5);",
+         "background: gradient(#e66465, #9198e5);"
+      ]
+    }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#cb202c",
+      "mainBg": "#000000",
+      "contrastText": "#ECECEC",
+      "gray": "#7E7E7E",
+      "inputBg": "#171B1F",
+      "wrong": "#F23E3E",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}
