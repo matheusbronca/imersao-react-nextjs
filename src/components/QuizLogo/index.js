@@ -1,16 +1,23 @@
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const QuizLogo = (props) => {
-  return (
-    <Image
-      src={props.src}
-      width={props.width}
-      height={props.height}
-      objectFit="cover"
-      objectPosition="center"
-    />
-  );
+const QuizLogo = ({ src, width, height }) => (
+  <Image
+    src={src}
+    width={width}
+    height={height}
+    objectFit="cover"
+    objectPosition="center"
+  />
+);
+
+QuizLogo.propTypes = {
+  src: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 };
 
 const LogoWrapper = styled.div`
@@ -24,12 +31,10 @@ const LogoWrapper = styled.div`
     margin-bottom: -8rem;
   }
 `;
-const Logo = (props) => {
-  return (
-    <LogoWrapper>
-      <QuizLogo {...props}></QuizLogo>
-    </LogoWrapper>
-  );
-};
+const Logo = (props) => (
+  <LogoWrapper>
+    <QuizLogo {...props} />
+  </LogoWrapper>
+);
 
 export default Logo;

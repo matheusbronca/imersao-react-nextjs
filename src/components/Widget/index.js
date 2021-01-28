@@ -2,15 +2,25 @@ import styled from 'styled-components';
 
 const Widget = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: rgba(0,0,0, .75);
+  background-color: rgba(0, 0, 0, 0.85);
   width: 100%;
   max-width: 550px;
   padding: 1.75rem 2.5rem 1.5rem 2.5rem;
   margin-bottom: 2rem;
   position: relative;
+  animation: 0.6s ease-out fadein running;
 
   * {
     margin: 0;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;
 
@@ -18,6 +28,7 @@ Widget.Header = styled.header`
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 3;
 
   * {
     margin: 0;
@@ -39,31 +50,8 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 1rem 0;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.65rem;
-
-  input[type='text'] {
-    font-size: 0.9rem;
-    width: 100%;
-    margin: 1.25rem 0 1rem 0;
-    padding: 0.75rem;
-    display: block;
-    border: 1px solid ${({ theme }) => theme.colors.gray};
-    color: ${({ theme }) => theme.colors.gray};
-    background-color: ${({ theme }) => theme.colors.inputBg};
-  }
-`;
-
-Widget.Button = styled.a`
-  padding: 0.5rem;
-  display: block;
-  width: 100%;
-  color: ${({ theme }) => theme.colors.textContrast};
-  background-color: ${({ theme }) => theme.colors.primary};
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-align: center;
 `;
 
 Widget.CommunityLinks = styled.a`
@@ -73,15 +61,43 @@ Widget.CommunityLinks = styled.a`
   border-radius: 4px;
   color: ${({ theme }) => theme.colors.primary};
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  margin: .75rem 0rem;
+  margin: 0.75rem 0rem;
 
   &:first-of-type {
-    margin: 1.5rem 0rem .75rem 0rem;
+    margin: 1.5rem 0rem 0.75rem 0rem;
   }
 
   &:last-of-type {
-    margin:0;
+    margin: 0;
   }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: .35rem 1rem; 
+  margin-bottom: .75rem;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: border 0.25s ease-out;
+  display: block;
+  border: 1px solid black;
+
+  &:hover,
+  &:focus {
+    border: 1px solid ${({ theme }) => theme.colors.primary};
+  }
+
+  &:first-of-type {
+    margin-top: 1rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
 `;
 
 export default Widget;

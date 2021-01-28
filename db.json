@@ -3,25 +3,103 @@
   "description": "Teste seus conhecimentos sobre a franquia The Witcher e se divirta!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "title": "Shani é uma médica à serviço de qual entidade?",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Academia de Oxenfurt",
+        "Exercito de Teméria",
+        "Exercito Redâniano",
+        "Os Selvagens"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "title": "Qual destes NÃO é um Necrófrago?",
+      "answer": 1,
+      "alternatives": [
+         "Drowner",
+         "Nekker",
+         "Foglet",
+         "Ghoul"
+      ]
+    },
+    {
+      "title": "Um Grifo é considerado um(a):",
+      "answer": 2,
+      "alternatives": [
+         "Fera",
+         "Draconídeo",
+         "Híbrido",
+         "Relicto"
+      ]
+    },
+    {
+      "title": "Geralt estava procurando por Ciri. Qual característica física ele costumava mencionar para as pessoas ao perguntar sobre ela?",
+      "answer": 3,
+      "alternatives": [
+         "Olhos ambar",
+         "Orelhas pontudas",
+         "Pele azul",
+         "Cabelo cinza"
+      ]
+    },
+    {
+      "title": "Qual o nome do jogo de cartas que Geralt pode jogar em The Witcher 3?",
+      "answer": 2,
+      "alternatives": [
+         "Campo de Batalha",
+         "Poker",
+         "Gwent",
+         "Xadrez"
+      ]
+    },
+    {
+      "title": "Geralt pode usar sinais de bruxo para se defender ou atacar, qual é o nome do sinal de fogo?",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Igni",
+         "Blaze",
+         "Inferno",
+         "Firestorm"
+      ]
+    },
+    {
+      "title": "Que feiticeira Geralt encontra quando chega em Novigrad?",
+      "answer": 0,
+      "alternatives": [
+         "Triss Merigold",
+         "Keira Metz",
+         "Yennefer de Vengerberg",
+         "Filippa Eilhart"
+      ]
+    },
+    {
+      "title": "Qual o nome que Geralt costuma dar às suas éguas?",
+      "answer": 3,
+      "alternatives": [
+         "Carricho",
+         "Capitao",
+         "Carpado",
+         "Carpeado"
+      ]
+    },
+    {
+      "title": "Qual destes animais NÃO representa uma escola de Bruxo?",
+      "answer": 3,
+      "alternatives": [
+         "Lobo",
+         "Víbora",
+         "Gato",
+         "Cão"
+      ]
+    },
+    {
+      "title": "Qual o verdadeiro amor de Geralt?",
+      "answer": 0,
+      "alternatives": [
+         "Yennefer de Vengerberg",
+         "Triss Merigold",
+         "Shani",
+         "Keira Metz"
       ]
     }
   ],

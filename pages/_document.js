@@ -1,4 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -51,9 +54,12 @@ e se divirta."
           <meta
             property="og:description"
             content="Teste seus conhecimentos sobre a franquia The Witcher
-e se divirta."
+            e se divirta."
           />
-          <meta property="og:image" content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg" />
+          <meta
+            property="og:image"
+            content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg"
+          />
 
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
@@ -65,14 +71,17 @@ e se divirta."
           <meta
             property="twitter:description"
             content="Teste seus conhecimentos sobre a franquia The Witcher
-e se divirta."
+            e se divirta."
           />
-          <meta property="twitter:image" content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg"></meta>
+          <meta
+            property="twitter:image"
+            content="https://imersao-react-nextjs.matheusbronca.vercel.app/images/og-image.jpg"
+          />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
         <body>
           <Main />
