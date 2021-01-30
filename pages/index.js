@@ -64,9 +64,9 @@ export default function Home() {
                     .split('.');
 
                   return (
-                    <li style={{listStyle: 'none', marginBottom: '.5rem'}}>
+                    <li style={{listStyle: 'none', marginBottom: '.5rem', width: '100%', overflow: 'hidden'}}>
                       <Widget.CommunityLinks href={externalLink}>
-                        {`${githubUser}/${projectName}`}
+                        <span style={{position: 'relative', width: '100%', display: 'block'}}>{`${githubUser}/${projectName}`}</span>
                       </Widget.CommunityLinks>
                     </li>
                   );

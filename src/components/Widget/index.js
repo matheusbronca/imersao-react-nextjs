@@ -58,11 +58,13 @@ Widget.Content = styled.div`
 
 Widget.CommunityLinks = styled.a`
   display: block;
+  position: relative;
   padding: 0.5rem;
   background-color: rgba(255, 0, 0, 0.2);
   text-decoration: none;
   border-radius: 4px;
   color: ${({ theme }) => theme.colors.contrastText};
+  text-overflow: ellipsis;
   border: 1px solid transparent;
   margin: 0.75rem 0rem;
   transition: border 0.25s ease-out;
