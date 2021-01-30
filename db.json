@@ -104,7 +104,9 @@
     }
   ],
   "external": [
-    ""
+    "https://doctor-who-quiz.emanuelpna.vercel.app/",
+    "https://harry-potter-quiz.lucianoweslen11.vercel.app/",
+    "https://dontstarvetogether-base.lucaserlerpereira.vercel.app/"
   ],
   "theme": {
     "colors": {
@@ -113,8 +115,9 @@
       "contrastText": "#ECECEC",
       "gray": "#7E7E7E",
       "inputBg": "#171B1F",
-      "wrong": "#F23E3E",
-      "success": "#4CAF50"
+      "wrong": "#7E7E7E50",
+      "success": "#00FFCC30",
+      "successBorder": "#00FF7F70"
     },
     "borderRadius": "4px"
   }

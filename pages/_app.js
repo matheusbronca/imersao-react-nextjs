@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
   
   html, body {
     min-height: 100vh;
+    background-color: black;
   }
 
   #__next {

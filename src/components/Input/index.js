@@ -9,7 +9,7 @@ const InputStyled = styled.input`
   padding: 0.75rem;
   display: block;
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.inputBg};
 `;
 

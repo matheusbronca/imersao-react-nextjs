@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div id="particles-js">
       <BackgroundImage>
-        <GitHubCorner />
+        <GitHubCorner projectUrl="https://github.com/matheusbronca/imersao-react-nextjs" />
         <QuizContainer>
           <Logo src="/images/logo.png" width={400} height={400} />
           <Widget>
@@ -51,19 +51,27 @@ export default function Home() {
               <h1>Quizes da Comunidade</h1>
             </Widget.Header>
             <Widget.Content>
-              <p>
+              <p style={{marginBottom: '1.5rem'}}>
                 Gostou deste Quiz? Dá uma olhada no que o pessoal da
-                {'<a>Imersão React NextJs</a> já fez: '}
+                Imersão React Next.js já fez:
               </p>
-              <Widget.CommunityLinks>
-                clebinhodj/showdomilhaoalura
-              </Widget.CommunityLinks>
-              <Widget.CommunityLinks>
-                clebinhodj/showdomilhaoalura
-              </Widget.CommunityLinks>
-              <Widget.CommunityLinks>
-                clebinhodj/showdomilhaoalura
-              </Widget.CommunityLinks>
+              <ul style={{padding: '0'}}>
+                {db.external.map((externalLink) => {
+                  const [projectName, githubUser] = externalLink
+                    .replace(/\//g, '')
+                    .replace('https:', '')
+                    .replace('.vercel.app', '')
+                    .split('.');
+
+                  return (
+                    <li style={{listStyle: 'none', marginBottom: '.5rem'}}>
+                      <Widget.CommunityLinks href={externalLink}>
+                        {`${githubUser}/${projectName}`}
+                      </Widget.CommunityLinks>
+                    </li>
+                  );
+                })}
+              </ul>
             </Widget.Content>
           </Widget>
           <Footer
