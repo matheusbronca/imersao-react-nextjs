@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const BackgroundImage = styled.div`
   flex: 1;
-  background-image: url('/images/bg.png');
+  background-image: url('/images/bg.jpg');
   height: 100vh;
   background-color: black;
   background-size: cover;
