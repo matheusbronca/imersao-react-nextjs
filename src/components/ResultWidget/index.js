@@ -101,9 +101,12 @@ function ResultWidget({ results }) {
               fontWeight: 'normal',
             }}
           >
-            {router.query.name}{', '}
-            você acertou <b>{getTotalPoints / 100}</b> pergunta(s), e conseguiu um
-            placar de:
+            <span style={{ textTransform: 'capitalize' }}>
+              {router.query.name}
+            </span>
+            {', '}
+            você acertou <b>{getTotalPoints / 100}</b> pergunta(s), e conseguiu
+            um placar de:
           </h3>
           <div
             style={{

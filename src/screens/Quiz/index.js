@@ -84,9 +84,6 @@ const QuestionWidget = ({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          <p>
-            {`${selectedAlternative}`}
-          </p>
         </AlternativesForm>
       </Widget.Content>
     </Widget>
