@@ -1,4 +1,5 @@
 {
+  "bg": "/images/bg.jpg",
   "title": "Quiz",
   "description": "Teste seus conhecimentos sobre a franquia The Witcher e se divirta!",
   "questions": [
