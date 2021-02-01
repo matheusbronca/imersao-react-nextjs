@@ -59,7 +59,7 @@ function ResultWidget({ results, isExternal }) {
     return description;
   };
 
-  if (!isExternal) {
+  if (isExternal) {
     return (
       <Widget>
         <Widget.Header>
