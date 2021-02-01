@@ -19,6 +19,7 @@ const QuestionWidget = ({
   onSubmit,
   addResult,
   title,
+  isExternal,
 }) => {
   const questionId = `question__${questionIndex}`;
   const [selectedAlternative, setSelectedAlternative] = React.useState(
@@ -106,6 +107,7 @@ export default function QuizPage({
   externalQuestions,
   externalBg,
   externalTitle,
+  isExternal,
 }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
@@ -152,7 +154,7 @@ export default function QuizPage({
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} isExternal={db.isExternal} />
+          <ResultWidget results={results} isExternal={isExternal} />
         )}
         <Footer
           src="/images/alura-logo.svg"

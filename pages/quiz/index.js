@@ -10,6 +10,7 @@ export default function QuizCommunityPage() {
         externalTitle={db.title}
         externalQuestions={db.questions}
         externalBg={db.bg}
+        isExternal={db.isExternal}
       />
     </ThemeProvider>
   );
