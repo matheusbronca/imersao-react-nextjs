@@ -10,6 +10,7 @@ import LoadingWidget from '../../components/LoadingWidget';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 import ResultWidget from '../../components/ResultWidget';
+import db from '../../../db.json';
 
 const QuestionWidget = ({
   question,
@@ -151,7 +152,7 @@ export default function QuizPage({
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} isExternal />
+          <ResultWidget results={results} isExternal={db.isExternal || true} />
         )}
         <Footer
           src="/images/alura-logo.svg"
