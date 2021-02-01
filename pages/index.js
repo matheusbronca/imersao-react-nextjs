@@ -11,6 +11,7 @@ import Button from '../src/components/Button';
 import Logo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
 
+
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
@@ -74,7 +75,9 @@ export default function Home() {
                   >
                     <Widget.CommunityLinks
                       // as={Link}
-                      href={`/quiz/${projectName}__${githubUser}`}
+                      href={`/quiz/${projectName}__${githubUser}?name=${name}`}
+                      data-disabled={name.length === 0}
+
                     >
                       <span
                         style={{

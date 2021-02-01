@@ -68,6 +68,7 @@ Widget.CommunityLinks = styled.a`
   border: 1px solid transparent;
   margin: 0.75rem 0rem;
   transition: border 0.25s ease-out;
+  user-select: none;
 
   &:hover {
     border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -80,6 +81,13 @@ Widget.CommunityLinks = styled.a`
 
   &:last-of-type {
     margin: 0;
+  }
+
+  &[data-disabled='true'] {
+    background-color: rgba(255, 0, 0, 0.2);
+    pointer-events: none;
+    filter: brightness(50%);
+
   }
 `;
 

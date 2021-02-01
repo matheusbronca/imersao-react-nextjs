@@ -189,10 +189,11 @@ function ResultWidget({ results, isExternal }) {
               fontWeight: 'normal',
             }}
           >
+            Parabéns{' '}
             <span style={{ textTransform: 'capitalize' }}>
               {router.query.name}
             </span>
-            {' '}Parabéns, você acertou <b>{getTotalPoints / 100}</b> pergunta(s), e
+            , você acertou <b>{getTotalPoints / 100}</b> pergunta(s), e
             conseguiu um placar de:
           </h3>
           <div
