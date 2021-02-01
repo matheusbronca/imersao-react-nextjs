@@ -50,10 +50,10 @@ function ResultWidget({ results, isExternal }) {
         'Talvez com um Axii vindo diretamente de Geralt você teria se saído melhor!';
     } else if (totalPoints >= 50 && totalPoints <= 79) {
       description =
-        'Parabéns, você domina bem o bestiário e conhece a cultura dos Bruxos, com alguma sorte passaria vivo pelo processo de mutação.';
+        'Parabéns, você domina bem o bestiário, conhece a cultura dos Bruxos e com alguma sorte passaria vivo pelo processo de mutação.';
     } else {
       description =
-        'Parabéns!! Você conhece alquimia como ninguém, domina os sinais, compreende as mutações' +
+        'Parabéns!! Você conhece a alquimia como ninguém, domina os sinais, compreende as mutações' +
         ', conhece cada criatura do bestiário e ainda domina a arte do amor. Você é um próprio Bruxo meu camarada!';
     }
     return description;
