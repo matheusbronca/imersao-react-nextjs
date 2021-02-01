@@ -1,11 +1,11 @@
 {
   "isExternal" : true,
-  "bg": "/images/bg.jpg",
+  "bg": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/bg.jpg?raw=true",
   "title": "Quiz",
   "description": "Teste seus conhecimentos sobre a franquia The Witcher e se divirta!",
   "questions": [
     {
-      "image": "/images/question-1.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-1.jpg?raw=true",
       "title": "Shani é uma médica à serviço de qual entidade?",
       "answer": 2,
       "alternatives": [
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "image": "/images/question-2.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-2.jpg?raw=true",
       "title": "Qual destes NÃO é um Necrófrago?",
       "answer": 1,
       "alternatives": [
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "image": "/images/question-3.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-3.jpg?raw=true",
       "title": "Um Grifo é considerado um(a):",
       "answer": 2,
       "alternatives": [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "image": "/images/question-4.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-4.jpg?raw=true",
       "title": "Geralt estava procurando por Ciri. Qual característica física ele costumava mencionar para as pessoas ao perguntar sobre ela?",
       "answer": 3,
       "alternatives": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "image": "/images/question-5.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-5.jpg?raw=true",
       "title": "Qual o nome do jogo de cartas que Geralt pode jogar em The Witcher 3?",
       "answer": 2,
       "alternatives": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "image": "/images/question-6.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-6.jpg?raw=true",
       "title": "Geralt pode usar sinais de bruxo para se defender ou atacar, qual é o nome do sinal de fogo?",
       "answer": 0,
       "alternatives": [
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "image": "/images/question-7.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-7.jpg?raw=true",
       "title": "Que feiticeira Geralt encontra quando chega em Novigrad?",
       "answer": 0,
       "alternatives": [
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "image": "/images/question-8.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-8.jpg?raw=true",
       "title": "Qual o nome que Geralt costuma dar às suas éguas?",
       "answer": 3,
       "alternatives": [
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "image": "/images/question-9.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-9.jpg?raw=true",
       "title": "Qual destes animais NÃO representa uma escola de Bruxo?",
       "answer": 3,
       "alternatives": [
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "image": "/images/question-10.jpg",
+      "image": "https://github.com/matheusbronca/imersao-react-nextjs/blob/main/public/images/question-10.jpg?raw=true",
       "title": "Qual o verdadeiro amor de Geralt?",
       "answer": 0,
       "alternatives": [
