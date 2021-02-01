@@ -9,8 +9,8 @@ import Widget from '../../components/Widget';
 import LoadingWidget from '../../components/LoadingWidget';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
+import ImageContainer from '../../components/ImageContainer';
 import ResultWidget from '../../components/ResultWidget';
-import db from '../../../db.json';
 
 const QuestionWidget = ({
   question,
@@ -19,7 +19,6 @@ const QuestionWidget = ({
   onSubmit,
   addResult,
   title,
-  isExternal,
 }) => {
   const questionId = `question__${questionIndex}`;
   const [selectedAlternative, setSelectedAlternative] = React.useState(
@@ -36,13 +35,13 @@ const QuestionWidget = ({
         <h1>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h1>
       </Widget.Header>
       <Widget.Content>
-        <div style={{ width: '100%', height: '350px', objectFit: 'cover' }}>
+        <ImageContainer>
           <img
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             src={question.image}
             alt="Imagem da pergunta"
           />
-        </div>
+        </ImageContainer>
         {/* <Img
           src={question.image || `/images/question-${questionIndex + 1}.jpg`}
           height="350"
