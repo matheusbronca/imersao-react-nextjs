@@ -4,6 +4,7 @@ const BackgroundImage = styled.div`
   flex: 1;
   background-image: url(${({ backgroundImage }) => backgroundImage});
   height: 100vh;
+  max-height: 100vh;
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -21,7 +22,7 @@ const BackgroundImage = styled.div`
     background: rgb(0, 0, 0);
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, .75) 0%,
+      rgba(0, 0, 0, 1) 0%,
       rgba(255, 255, 255, 0) 25%
     );
     pointer-events: none;
