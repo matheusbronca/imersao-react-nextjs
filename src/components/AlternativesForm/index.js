@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const AlternativesForm = styled.form`
+  &[data-submited='true'] {
+    pointer-events: none;
+  }
+  
   label {
     font-size: 1.175rem;
     &[data-selected='true'] {

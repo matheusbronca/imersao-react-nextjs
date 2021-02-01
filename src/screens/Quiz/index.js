@@ -27,6 +27,7 @@ const QuestionWidget = ({
   const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
+  const [submited, setSubmited] = React.useState(false);
 
   return (
     <Widget>
@@ -58,9 +59,11 @@ const QuestionWidget = ({
               addResult(isCorrect);
               onSubmit();
               setIsQuestionSubmited(false);
+              setSubmited(false);
               setSelectedAlternative(undefined);
             }, 0.75 * 1000);
           }}
+          data-submited={submited}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
@@ -87,7 +90,7 @@ const QuestionWidget = ({
             );
           })}
 
-          <Button type="submit" disabled={!hasAlternativeSelected}>
+          <Button type="submit" disabled={!hasAlternativeSelected} onClick={() => setSubmited(true)}>
             Confirmar
           </Button>
         </AlternativesForm>
