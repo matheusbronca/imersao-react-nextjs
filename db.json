@@ -4,6 +4,7 @@
   "description": "Teste seus conhecimentos sobre a franquia The Witcher e se divirta!",
   "questions": [
     {
+      "image": "/images/question-1",
       "title": "Shani é uma médica à serviço de qual entidade?",
       "answer": 2,
       "alternatives": [
@@ -14,6 +15,7 @@
       ]
     },
     {
+      "image": "/images/question-2",
       "title": "Qual destes NÃO é um Necrófrago?",
       "answer": 1,
       "alternatives": [
@@ -24,6 +26,7 @@
       ]
     },
     {
+      "image": "/images/question-3",
       "title": "Um Grifo é considerado um(a):",
       "answer": 2,
       "alternatives": [
@@ -34,6 +37,7 @@
       ]
     },
     {
+      "image": "/images/question-4",
       "title": "Geralt estava procurando por Ciri. Qual característica física ele costumava mencionar para as pessoas ao perguntar sobre ela?",
       "answer": 3,
       "alternatives": [
@@ -44,6 +48,7 @@
       ]
     },
     {
+      "image": "/images/question-5",
       "title": "Qual o nome do jogo de cartas que Geralt pode jogar em The Witcher 3?",
       "answer": 2,
       "alternatives": [
@@ -54,6 +59,7 @@
       ]
     },
     {
+      "image": "/images/question-6",
       "title": "Geralt pode usar sinais de bruxo para se defender ou atacar, qual é o nome do sinal de fogo?",
       "answer": 0,
       "alternatives": [
@@ -64,6 +70,7 @@
       ]
     },
     {
+      "image": "/images/question-7",
       "title": "Que feiticeira Geralt encontra quando chega em Novigrad?",
       "answer": 0,
       "alternatives": [
@@ -74,6 +81,7 @@
       ]
     },
     {
+      "image": "/images/question-8",
       "title": "Qual o nome que Geralt costuma dar às suas éguas?",
       "answer": 3,
       "alternatives": [
@@ -84,6 +92,7 @@
       ]
     },
     {
+      "image": "/images/question-9",
       "title": "Qual destes animais NÃO representa uma escola de Bruxo?",
       "answer": 3,
       "alternatives": [
@@ -94,6 +103,7 @@
       ]
     },
     {
+      "image": "/images/question-10",
       "title": "Qual o verdadeiro amor de Geralt?",
       "answer": 0,
       "alternatives": [
