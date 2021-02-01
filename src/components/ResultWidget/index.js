@@ -108,7 +108,7 @@ function ResultWidget({ results, isExternal }) {
                 {router.query.name}
               </span>
               {', '}
-              você acertou <b>{getTotalPoints / 100}</b> pergunta(s), e
+              você acertou <b>{getTotalPoints / 100}</b> pergunta(s) e
               conseguiu um placar de:
             </h3>
             <div
