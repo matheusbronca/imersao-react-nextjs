@@ -71,7 +71,7 @@ Widget.CommunityLinks = styled.a`
 
   &:hover {
     border: 1px solid ${({ theme }) => theme.colors.primary};
-    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px ${({theme}) => theme.colors.shadowPrimary};
   }
 
   &:first-of-type {

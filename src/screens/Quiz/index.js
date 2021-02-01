@@ -1,19 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Img from 'next/image';
 
-import db from '../../../db.json';
-import GitHubCorner from '../../components/GitHubCorner';
+import ProgressBar from '../../components/ProgressBar';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import BackgroundImage from '../../components/BackgroundImage';
 import Widget from '../../components/Widget';
 import LoadingWidget from '../../components/LoadingWidget';
 import Button from '../../components/Button';
-import Logo from '../../components/QuizLogo';
 import Footer from '../../components/Footer';
 import ResultWidget from '../../components/ResultWidget';
-
 
 const QuestionWidget = ({
   question,
@@ -21,6 +17,7 @@ const QuestionWidget = ({
   totalQuestions,
   onSubmit,
   addResult,
+  title,
 }) => {
   const questionId = `question__${questionIndex}`;
   const [selectedAlternative, setSelectedAlternative] = React.useState(
@@ -32,17 +29,25 @@ const QuestionWidget = ({
 
   return (
     <Widget>
+      <div>{title}</div>
       <Widget.Header>
         <h1>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h1>
       </Widget.Header>
       <Widget.Content>
-        <Img
-          src={`/images/question-${questionIndex + 1}.jpg`}
+        <div style={{ width: '100%', height: '350px', objectFit: 'cover' }}>
+          <img
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            src={question.image}
+            alt="Imagem da pergunta"
+          />
+        </div>
+        {/* <Img
+          src={question.image || `/images/question-${questionIndex + 1}.jpg`}
           height="350"
           width="620"
           objectFit="cover"
           objectPosition="center"
-        />
+        /> */}
         <h4 style={{ margin: '1rem 0rem' }}>{question.title}</h4>
         <AlternativesForm
           onSubmit={(e) => {
@@ -96,13 +101,18 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizPage({
+  externalQuestions,
+  externalBg,
+  externalTitle,
+}) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = externalQuestions.length;
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const bg = externalBg;
 
   function addResult(result) {
     setResults([...results, result]);
@@ -124,12 +134,12 @@ export default function QuizPage() {
   };
 
   return (
-    <BackgroundImage>
-      <GitHubCorner />
+    <BackgroundImage backgroundImage={bg}>
+      <ProgressBar progress={questionIndex} totalQuestions={totalQuestions} />
       <QuizContainer>
-        <Logo src="/images/logo.png" width={400} height={400} />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
+            title={externalTitle}
             question={question}
             questionIndex={questionIndex}
             totalQuestions={totalQuestions}
@@ -141,7 +151,7 @@ export default function QuizPage() {
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} />
+          <ResultWidget results={results} isExternal />
         )}
         <Footer
           src="/images/alura-logo.svg"

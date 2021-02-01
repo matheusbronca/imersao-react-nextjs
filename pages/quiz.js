@@ -3,7 +3,6 @@ import React from 'react';
 import Img from 'next/image';
 
 import db from '../db.json';
-import GitHubCorner from '../src/components/GitHubCorner';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import BackgroundImage from '../src/components/BackgroundImage';
@@ -13,7 +12,8 @@ import Button from '../src/components/Button';
 import Logo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
 import ResultWidget from '../src/components/ResultWidget';
-import BackLinkArrow from '../src/components/BackLinkArrow'
+import BackLinkArrow from '../src/components/BackLinkArrow';
+import ProgressBar from '../src/components/ProgressBar';
 
 const QuestionWidget = ({
   question,
@@ -33,7 +33,7 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
-        <div style={{display: 'flex', alignItems: 'center'}}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <BackLinkArrow href="/" />
           <h1>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h1>
         </div>
@@ -126,10 +126,10 @@ export default function QuizPage() {
   };
 
   return (
-    <BackgroundImage>
-      <GitHubCorner projectUrl="https://github.com/matheusbronca/imersao-react-nextjs" />
-      <QuizContainer> 
-        <Logo src="/images/logo.png" width={400} height={400} />
+    <BackgroundImage backgroundImage="/images/bg.jpg">
+      <ProgressBar progress={questionIndex} totalQuestions={totalQuestions} />
+      <QuizContainer>
+        <Logo src={db.bg || '/images/logo.png'} width={400} height={400} />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
@@ -143,7 +143,7 @@ export default function QuizPage() {
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} />
+          <ResultWidget results={results} isExternal={false} />
         )}
         <Footer
           src="/images/alura-logo.svg"

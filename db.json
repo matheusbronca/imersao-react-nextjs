@@ -111,12 +111,15 @@
   "theme": {
     "colors": {
       "primary": "#cb202c",
+      "shadowPrimary":"rgba(255, 0, 0, 0.75)",
       "mainBg": "#000000",
       "contrastText": "#ECECEC",
       "gray": "#7E7E7E",
       "inputBg": "#171B1F",
       "wrong": "#7E7E7E50",
+      "wrongText": "gray",
       "success": "#00FFCC30",
+      "successText": "00FF7F",
       "successBorder": "#00FF7F70"
     },
     "borderRadius": "4px"

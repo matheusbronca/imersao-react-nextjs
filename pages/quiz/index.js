@@ -7,6 +7,7 @@ export default function QuizCommunityPage() {
   return (
     <ThemeProvider theme={db.theme}>
       <QuizScreen
+        externalTitle={db.title}
         externalQuestions={db.questions}
         externalBg={db.bg}
       />

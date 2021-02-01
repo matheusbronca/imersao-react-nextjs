@@ -13,9 +13,12 @@ const Button = styled.button`
   font-weight: bold;
   text-align: center;
   color: ${({ theme }) => theme.colors.contrastText};
-  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+  transition: box-shadow 0.25s , transform 0.15s ease-out;
 
   a {
+    display: block;
+    width: 100%;
+    height: 100%;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
@@ -25,8 +28,8 @@ const Button = styled.button`
 
   &:disabled {
     cursor: initial;
-    color: gray;
-    background-color: rgba(50, 0, 0);
+    background-color: ${({ theme }) => `${theme.colors.primary}`};
+    filter: brightness(30%) grayscale(50%);
 
     &:hover {
       box-shadow: none;
@@ -38,7 +41,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    box-shadow: 0px 2px 15px rgba(150, 0, 0);
+    box-shadow: 0px 0px 20px ${({ theme }) => `${theme.colors.primary  }95`};
   }
 `;
 
