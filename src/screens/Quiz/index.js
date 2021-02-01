@@ -152,7 +152,7 @@ export default function QuizPage({
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} isExternal={isExternal} />
+          <ResultWidget results={results} isExternal={db.isExternal} />
         )}
         <Footer
           src="/images/alura-logo.svg"
